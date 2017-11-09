@@ -37,6 +37,9 @@ h1 {
 	text-align: center;
 	cursor: pointer;
 }
+#tempunit:hover {
+  color : red;
+}
 #wait {
 	display:none;
 	text-align: center;
@@ -47,7 +50,6 @@ h1 {
 	margin-right: 400px;
 	margin-left: 400px;
 	margin-top: 30px;
-	background-image: url("IMG/mountains.jpg");
 	background: rgba(255,255,255,0.5);
 	background-repeat: no-repeat;
     background-size: cover;

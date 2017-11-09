@@ -36,22 +36,25 @@ function afficheUI(data){
 	/* IMAGES */
 	if (weatherDescription == "Clouds"){
 		$('#weatherImg').append('<div><img src="IMG/307.gif"></div>');
-		
+		$('body').css('background-image' , 'url("IMG/5.jpg")');
 	}
 	else if (weatherDescription == "Clear"){
 		$('#weatherImg').append('<div><img src="IMG/314.gif"></div>');
+		$('body').css('background-image' , 'url("IMG/4.jpg")');
 	}
 	else if (weatherDescription == "Rain"){
 		$('#weatherImg').append('<div><img src="IMG/311.gif"></div>');
+		$('body').css('background-image' , 'url("IMG/1.jpeg")');
 	}
 	else if (weatherDescription == "Thunderstorm"){
 		$('#weatherImg').append('<div><img src="IMG/310.gif"></div>');
+		$('body').css('background-image' , 'url("IMG/3.jpg")');
 	}
 
 
 /* Celcius-Fahrenheit */
 	$("#tempunit").click(function() {
-
+		$("#tempunit").css('color','red');
 		var temperature = $("#tempunit").text();
 
 		if (temperature == " °C") {
